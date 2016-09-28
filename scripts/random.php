@@ -20,6 +20,4 @@ if ( have_posts() ) : $i=0;
 	</div>
 
 <?php i++; endwhile; ?>
-<!-- post navigation -->
-
 <?php endif; ?>
