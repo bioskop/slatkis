@@ -2,7 +2,7 @@
 
 	<?php if( has_post_thumbnail() ): ?>
 
-		<div class="thumbnail"><?php the_post_thumbnail('medium'); ?></div>
+		<div class="mrd thumbnail"><?php the_post_thumbnail('medium'); ?></div>
 
 	<?php endif; ?>
 

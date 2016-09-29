@@ -19,7 +19,7 @@
 	if( $lastBlog->have_posts() ):
 		while( $lastBlog->have_posts() ): $lastBlog->the_post(); ?>
 
-			<div class="col-xs-12 col-sm-4">
+			<div class="col-xs-4 ">
 				<?php get_template_part('content','featured'); ?>
 			</div>
 
@@ -29,4 +29,12 @@
 
 	
 </div>
+<div class="col-xs-4 well">
+</div>
+<div class="col-xs-4 well">
+</div>
+	<div class="col-xs-4 well ">
+</div>
+
+
 <?php get_footer(); ?>
