@@ -20,4 +20,31 @@ if ( have_posts() ) : $i=0;
 	</div>
 
 <?php i++; endwhile; ?>
+
+<!-- PAGINATION -->
+<div class="col-xs-6 text-left">
+	<?php next_posts_link('Older Posts'); ?>
+</div>
+<div class="col-xs-6 text-right">
+	<?php previous_posts_link('Newer Posts'); ?>
+</div>
+
 <?php endif; ?>
+
+
+<!-- ako u settings postavim broj postova za prikaz, 
+custom query post ce da ga prekazi i u tom slucaju kad koristimo 
+query post pagination ne radi, resenje: -->
+
+<?php 
+	$currentPage = (get_query_var('paged')) ? get_query_var('paged') : 1;
+	$args = array( 'posts_per_page' => 3, 'paged' => $currentPage);
+ ?>
+
+ <!-- wp-config.php , ukljuci debug, ne prikazuje na ekran ali kreira log
+ u folderu /wp-content/debug.log -->
+ <?php 
+ 	define('WP_DEBUG', true);
+ 	define('WP_DEBUG_DISPLAY', false);
+ 	define('WP_DEBUG_LOG', true);
+  ?>

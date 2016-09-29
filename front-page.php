@@ -1,3 +1,7 @@
+<?php 
+//izabrani front page u settings zahteva ime front-page.php 
+//bez obzira koji page se izabere
+ ?>
 <?php get_header(); ?>
 <?php get_sidebar(); ?>
 

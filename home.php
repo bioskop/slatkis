@@ -1,3 +1,6 @@
+<?php 
+	// Default blog page, wordpress trazi home.php ako je podesen posts page u settings
+ ?>
 <?php get_header(); ?>
 <?php get_sidebar(); ?>
 	<?php
