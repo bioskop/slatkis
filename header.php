@@ -49,5 +49,10 @@
 						</div>
 					  </div><!-- /.container-fluid -->
 					</nav>
-				</div><!-- End col-xs-12 -->
+				</div>
+				<div class="col-xs-4 pull-right">
+					<div class="search-form-container">
+						<?php get_search_form(); ?>
+					</div>
+				</div>
 			</div><!-- End Menu Row -->
