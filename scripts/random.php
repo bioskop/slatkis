@@ -21,6 +21,8 @@ if ( have_posts() ) : $i=0;
 
 <?php i++; endwhile; ?>
 
+
+
 <!-- PAGINATION -->
 <div class="col-xs-6 text-left">
 	<?php next_posts_link('Older Posts'); ?>
@@ -39,6 +41,10 @@ query post pagination ne radi, resenje: -->
 <?php 
 	$currentPage = (get_query_var('paged')) ? get_query_var('paged') : 1;
 	$args = array( 'posts_per_page' => 3, 'paged' => $currentPage);
+	//query_posts( $args ) je problematican, koristi $lastBlog = new WP_Query($args);
+	query_posts( $args );
+	//standard loop
+	wp_reset_query();
  ?>
 
  <!-- wp-config.php , ukljuci debug, ne prikazuje na ekran ali kreira log

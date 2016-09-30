@@ -50,7 +50,7 @@
 					  </div><!-- /.container-fluid -->
 					</nav>
 				</div>
-				<div class="col-xs-4 pull-right">
+				<div class="col-xs-12">
 					<div class="search-form-container">
 						<?php get_search_form(); ?>
 					</div>
